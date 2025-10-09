@@ -11,3 +11,4 @@
 - Mother duck -> Egg -> Ducklings
 - Beside food, insert obstacles: poisonous mushrooms, cactus ...
 - Set up the game levels
+- Replace control buttons W A S D with arrow buttons ?
