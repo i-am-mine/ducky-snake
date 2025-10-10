@@ -25,7 +25,7 @@ This is a duck-themed version of the classic Snake game. Control a snake, repres
 ## How to Run
 Run the file:
 ```bash
-./ducky
+./run.sh
 ```
 
 ## Game Controls
