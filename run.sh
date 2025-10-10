@@ -7,7 +7,7 @@ echo "🦆 Compiling Ducky Snake..."
 echo "================================"
 
 # Compile the game
-g++ -o ducky-snake ducky.cpp
+g++ -o ducky ducky.cpp
 
 # Check if compilation was successful
 if [ $? -eq 0 ]; then
@@ -18,7 +18,7 @@ if [ $? -eq 0 ]; then
     echo ""
     
     # Run the game
-    ./ducky-snake
+    ./ducky
 else
     echo "❌ Compilation failed!"
     echo "Please check for errors above."
