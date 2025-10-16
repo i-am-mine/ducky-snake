@@ -98,11 +98,12 @@ void Draw() {
     system("clear"); // clear terminal
     
     // Animated title with blinking effect
-    if (int(animTime * 2) % 2 == 0) {
-        cout << BOLD << CYAN << "🦆 DUCKY SNAKE 🦆" << RESET << endl;
-    } else {
-        cout << BOLD << YELLOW << "🦆 DUCKY SNAKE 🦆" << RESET << endl;
-    }
+    // if (int(animTime * 2) % 2 == 0) {
+    //     cout << BOLD << CYAN << "🦆 DUCKY SNAKE 🦆" << RESET << endl;
+    // } else {
+    //     cout << BOLD << YELLOW << "🦆 DUCKY SNAKE 🦆" << RESET << endl;
+    // }
+    cout << BOLD << YELLOW << "🦆 DUCKY SNAKE 🦆" << RESET << endl;
     cout << string(24, '=') << endl << endl;
     
     // Top border with animated corners
@@ -116,30 +117,33 @@ void Draw() {
             // Smooth duck head with animation
             if (i == y && j == x) {
                 // Animated duck head with blinking
-                if (int(animTime * 4) % 2 == 0) {
-                    cout << BOLD << YELLOW << "🦆" << RESET; // Eyes open
-                } else {
-                    cout << BOLD << YELLOW << "🦆" << RESET; // Eyes closed (same for now)
-                }
+                // if (int(animTime * 4) % 2 == 0) {
+                //     cout << BOLD << YELLOW << "🦆" << RESET; // Eyes open
+                // } else {
+                //     cout << BOLD << YELLOW << "🦆" << RESET; // Eyes closed (same for now)
+                // }
+                cout << BOLD << YELLOW << "🦆" << RESET;
             }
             // Animated fruit with pulsing effect
             else if (i == fruitY && j == fruitX) {
-                if (int(animTime * 3) % 2 == 0) {
-                    cout << BOLD << RED << "🍎" << RESET; // Normal size
-                } else {
-                    cout << BOLD << RED << "🍎" << RESET; // Slightly larger (same for now)
-                }
+                // if (int(animTime * 3) % 2 == 0) {
+                //     cout << BOLD << RED << "🍎" << RESET; // Normal size
+                // } else {
+                //     cout << BOLD << RED << "🍎" << RESET; // Slightly larger (same for now)
+                // }
+                cout << BOLD << RED << "🍎" << RESET;
             }
             else {
                 bool print = false;
-                for (int k = 1; k < snake.size(); k++) {
+                for (int k = 0; k < snake.size()-1; k++) {
                     if (snake[k].first == j && snake[k].second == i) {
                         // Animated ducklings with wiggling effect
-                        if (int(animTime * 5 + k) % 2 == 0) {
-                            cout << YELLOW << "🐥" << RESET; // Normal
-                        } else {
-                            cout << YELLOW << "🐥" << RESET; // Wiggling (same for now)
-                        }
+                        // if (int(animTime * 5 + k) % 2 == 0) {
+                        //     cout << YELLOW << "🐥" << RESET; // Normal
+                        // } else {
+                        //     cout << YELLOW << "🐥" << RESET; // Wiggling (same for now)
+                        // }
+                        cout << YELLOW << "🐥" << RESET;
                         print = true;
                     }
                 }
@@ -300,6 +304,7 @@ int main() {
     cout << "Press any key to start..." << endl;
     getchar();
     
+    // Initial pos of mom duck is in the middle
     Setup();
     
     // Main game loop with proper timing
