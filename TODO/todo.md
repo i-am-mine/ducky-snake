@@ -1,8 +1,9 @@
 # Task to complete
 
 ## Graphic
-- Study Qt framework ?
-- Qt:
+- Upgrade the graphic from TUI to GUI
+    - Study Qt framework ?
+    - Qt:
 
 
 
