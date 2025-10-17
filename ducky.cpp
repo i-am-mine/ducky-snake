@@ -273,7 +273,7 @@ void Logic() {
 void ShowGameOver() {
     system("clear");
     cout << BOLD << RED << "╔══════════════════════════════╗" << RESET << endl;
-    cout << BOLD << RED << "║        GAME OVER! 🦆        ║" << RESET << endl;
+    cout << BOLD << RED << "║        GAME OVER! 🦆         ║" << RESET << endl;
     cout << BOLD << RED << "╚══════════════════════════════╝" << RESET << endl << endl;
     
     cout << BOLD << "Final Score: " << YELLOW << score << RESET << endl;
@@ -330,6 +330,7 @@ int main() {
     
     // Restart loop with proper timing
     while (true) {
+        system("clear");
         Setup();
         while (!gameOver) {
             auto currentTime = chrono::high_resolution_clock::now();
