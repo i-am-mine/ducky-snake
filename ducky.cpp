@@ -95,7 +95,8 @@ void Setup() {
 }
 
 void Draw() {
-    system("clear"); // clear terminal
+    // system("clear"); // clear terminal
+    cout << "\033[H";
     
     // Animated title with blinking effect
     // if (int(animTime * 2) % 2 == 0) {
@@ -300,6 +301,8 @@ void ShowGameOver() {
 }
 
 int main() {
+    system("clear");
+
     cout << BOLD << CYAN << "Welcome to Ducky Snake! 🦆" << RESET << endl;
     cout << "Press any key to start..." << endl;
     getchar();
