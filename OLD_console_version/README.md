@@ -1,10 +1,11 @@
 # ducky-snake 🦆
 
 A mini game: Snake but with ducks!
+*(This is the first release (version 1) of the game running in the console.)*
 
 ## What it is
 
-This is a duck-themed version of the classic Snake game. Control a snake, represented by a Mother duck (🦆) for the head and children ducks (🐥) and eggs (🥚) for the body, as it moves around a 20x20 grid, collecting vegetables to grow longer and increase your score.
+This is a duck-themed version of the classic Snake game. Control a snake, represented by a Mother duck (🦆) for the head and children ducks (🐥) for the body, as it moves around a 10x20 grid, collecting vegetables to grow longer and increase your score.
 
 ## How to Play
 
