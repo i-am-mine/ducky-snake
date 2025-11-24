@@ -1,11 +1,15 @@
 # Task to complete
 
+## Versions
+- Ver1.0: console gaming, used for technical guys. Basic, compilation requirements
+- Ver2.0: with Qt framework, used for techinical guys specializing in C++. More complex, Qt installation requirements
+- Ver3.0: webapp, used for all users, non-technical including.
+
+
 ## Graphic
 - Upgrade the graphic from TUI to GUI
     - Study Qt framework ?
-    - Qt:
-
-
+    - Qt: design OOP for the game
 
 ## Feature
 - Create, or integrate, a random food location generator
